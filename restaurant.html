@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grand Cafe</title>
+	<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(window).load(function() {
+	$('#slider').nivoSlider({
+		effect:'random',
+		slices:10,
+		animSpeed:500,
+		pauseTime:2200,
+		startSlide:0, //Set starting Slide (0 index)
+		directionNav:false,
+		directionNavHide:false, //Only show on hover
+		controlNav:false, //1,2,3...
+		controlNavThumbs:false, //Use thumbnails for Control Nav
+		pauseOnHover:true, //Stop animation while hovering
+		manualAdvance:false, //Force manual transitions
+		captionOpacity:0.8, //Universal caption opacity
+		beforeChange: function(){},
+		afterChange: function(){},
+		slideshowEnd: function(){} //Triggers after all slides have been shown
+	});
+});
+</script>
+</head>
+<style type="text/css">
+	.nav{
+		margin-top:-10px;
+		margin-left: -10px;
+		margin-right: -10px;
+		
+	}
+	.nav_after{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.nav ul{
+		background-color: white;
+		list-style-type: none;
+		padding: 0 ;
+		margin: 0;
+		overflow: visible;
+		position: relative;
+	}
+	.nav ul li{
+		float: right;
+		padding-bottom: 100px;
+
+		
+	}
+	.nav ul li a{
+		padding-right: 25px;
+		text-align: center;
+		font-size: 25px;
+		font-family: forte;
+		color: indianred;
+		text-decoration: none;
+
+	}
+	
+	/*.nav ul li:nth-child(1){
+		float: right;
+	}
+	.nav ul li:nth-child(2){
+		float: right;
+	}
+	.nav ul li:nth-child(3){
+		float: right;
+	}
+	.nav ul li:nth-child(4){
+		float: right;
+	}
+	.nav ul li:nth-child(5){
+		float: right;
+	}
+	.nav ul li:nth-child(6){
+		float: right;
+	}*/
+
+
+	.nav ul li.dropbtn {
+    display: inline-block;
+    color: blue;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+	}
+
+
+	.nav ul li a:hover,.dropdown:hover .dropbtn{
+		color: #4CAF50;
+	}
+	.nav ul li.dropdown {
+    display: inline-block;
+	}
+	.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px red;
+    z-index: 1;
+
+	}
+
+	.dropdown-content a {
+    color: black;
+    padding: 6px 10x;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	}
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	.dropdown:hover .dropdown-content {
+    display: block;
+	}
+	.carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height: 40%;
+  }
+  .nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width: 320px;
+	height: 240px
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:60;
+	display:none;
+}
+/* The slices in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:50;
+	height:100%;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:89;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:99;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+	.gallery{
+
+		margin: 5px 5px 5px 40px;
+		float: left;
+		border: 2px solid #ccc;
+	}
+	.gallery a:hover{
+		border: 2px solid #777;
+	}
+
+	.gallery img{
+		width: 380px;
+		height: 250px;
+	}
+	.gallery .desc{
+		padding : 10px;
+
+	}
+	.gallery .desc p a{
+		
+		text-decoration: none;
+		color: #333;
+		text-align: center;
+		font-size: 20px;
+		font-family: verdana;
+	}
+	footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+	footer img{
+		width: 50px;
+	}
+
+</style>
+<body>
+	<div class="nav">
+        <a href="restaurant.html"><img src="logo.png" width="30%" height="20%"></a>
+		<ul>
+			<li>
+				<a href="">RESERVATION</a>
+			</li>
+			<li>
+				<a href="">CONTACT</a>
+			</li>
+			<li>
+				<a href="">GALLERY</a>
+			</li>
+			<li>
+				<a href="">DAILY SPECIAL</a>
+			</li>
+			<li class="dropdown">
+			    <a href="menu.html" class="dropbtn">MENU</a>
+			    <div class="dropdown-content">
+			      <a href="menu.html">LUNCH</a>
+			      <a href="menu.html"> DINNER</a>
+			      <a href="menu.html">DRINKS</a>
+			    </div>
+			 </li>   
+			<li>
+				<a href="restaurant.html">HOME</a>
+			</li>
+			
+		</ul>
+		
+	</div>
+	<div class="slidersection templete clear">
+			<div id="slider">
+				<a href="#"><img src="menu2.jpg" alt="players 1" title=""/></a>
+				<a href="#"><img src="menu3.jpg" alt="players 2" title=""/></a>
+				<a href="#"><img src="menu4.jpg" alt="players 3" title=""/></a>
+				<a href="#"><img src="menu5.jpg" alt="players 4" title=""/></a>
+			</div>
+	</div>		
+	<!-- <div class="nav_after">
+		<img src="PS_Dining_Main.jpg" width="100%" height="500px">
+	</div>  -->
+	<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <!-- <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+ -->
+    <!-- Wrapper for slides -->
+    <!-- <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="PS_Dining_Main.jpg" alt="Image" width="100%" height="300px">
+         -->
+</div> -->
+	<div>
+
+		<p style="position: center; font-size: 20px; font-family: forte;border-spacing: 50px; color: black;  ">
+			Welcome to the Grand Cafe—a warm and inviting family-owned restaurant located on Dhanmondi, in Dhaka. Grand Cafe owner Samira Sahil and her staff are dedicated to serving a quality meal prepared with the freshest produce, meat and seafood. You are invited to spend a lazy afternoon having lunch in our garden, or enjoy a starlit meal on our wraparound porch. Featuring fresh seafood specials, and an award-winning wine list.
+		</p>
+	</div>
+	<div class="gallery">
+
+		<a href=""><img src="menu.png"></a>
+		<div class="desc">
+			<p><a href="">Our Menu</a></p>
+		</div>
+	</div>
+	<div class="gallery">
+		<a href=""><img src="daily_special.jpg"></a>
+		<div class="desc">
+			<p><a href="">Meet Our Daily Special</a></p>
+		</div>
+	</div>
+	<div class="gallery">
+
+		<a href=""><img src="grand-cafe.jpg"></a>
+		<div class="desc">
+			<p><a href="">About Us</a></p>
+		</div>
+		
+	</div>
+	<footer>
+		<a href="https://www.facebook.com/"><img src="logo/fb.png"/></a>
+		<a href="https://www.google.com"><img src="logo/google.png"/></a>
+		<a href="https://www.twitter.com"><img src="logo/twitt.png"/></a>
+		<a href="https://www.linkdin.com"><img src="logo/linkdinn.png"/></a><br> 
+	    Copyright &copy; nusrathjahan58@gmail.com
+	</footer>
+
+
+</body>
+</html>

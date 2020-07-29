@@ -1,0 +1,238 @@
+<?php
+require_once 'connection.php';
+$f_n = $_REQUEST['first_name'];
+$l_n = $_REQUEST['last_name'];
+$e_n = $_REQUEST['email'];
+//echo $f_n."<br>";
+//echo $l_n."<br>";
+//echo $e_n."<br>";
+
+
+
+$sql = "insert into soft_hard.uap(first_name,last_name,email)
+VALUES ('$f_n', '$l_n','$e_n' )";
+//echo $sql;
+if (mysqli_query($conn, $sql)) {
+    echo "Records added successfully";
+} else {
+    echo "Error: could not able to execute $sql. " . mysqli_error($conn);
+}
+
+mysqli_close($conn);
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reservation</title>
+</head>
+<style type="">
+	.nav{
+		margin-top:-10px;
+		margin-left: -10px;
+		margin-right: -10px;
+		
+	}
+	.nav_after{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.nav ul{
+		background-color: white;
+		list-style-type: none;
+		padding: 0 ;
+		margin: 0;
+		overflow: hidden;
+		position: relative;
+	}
+	.nav ul li{
+		float: right;
+		padding-bottom: 100px;
+
+		
+	}
+	.nav ul li a{
+		padding-right: 25px;
+		text-align: center;
+		font-size: 25px;
+		font-family: forte;
+		color: indianred;
+		text-decoration: none;
+
+	}
+	
+	/*.nav ul li:nth-child(1){
+		float: right;
+	}
+	.nav ul li:nth-child(2){
+		float: right;
+	}
+	.nav ul li:nth-child(3){
+		float: right;
+	}
+	.nav ul li:nth-child(4){
+		float: right;
+	}
+	.nav ul li:nth-child(5){
+		float: right;
+	}
+	.nav ul li:nth-child(6){
+		float: right;
+	}*/
+
+
+	.nav ul li.dropbtn {
+    display: inline-block;
+    color: blue;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+	}
+
+
+	.nav ul li a:hover,.dropdown:hover .dropbtn{
+		color: #4CAF50;
+	}
+	.nav ul li.dropdown {
+    display: inline-block;
+	}
+	.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px red;
+    z-index: 1;
+	}
+
+	.dropdown-content a {
+    color: black;
+    padding: 6px 10x;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	}
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	.dropdown:hover .dropdown-content {
+    display: block;
+	}
+	#form{
+		background-image: url(contact.jpg);
+		object-fit: contain;
+		color: white;
+	}
+	#form input[type=date],input[type=Time],select{
+    	width: 30%;
+    	padding: 12px 20px;
+    	margin: 8px 0;
+    	display: 1px solid #ccc;
+    	box-sizing: border-box;
+    	border-radius: 4px;
+    }
+    #form input[type=submit]{
+
+    	width: 20%;
+    	padding: 12px 20px;
+    	background-color: cyan;
+    	color: black;
+    	margin: 8px 0;
+    	border-radius: 4px;
+    	border: none;
+    	cursor: pointer;
+    	font-size: 20px;
+    }
+    #form input[type=submit]:hover{
+			background-color: #333;
+		}
+		footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}	
+</style>
+<body>
+	<div class="nav">
+        <a href="Grandcafe.html"><img src="logo.png" width="30%" height="20%"></a>
+		<ul>
+			<li>
+				<a href="reg_log.html">RESERVATION</a>
+			</li>
+			<li>
+				<a href="contact.html">CONTACT</a>
+			</li>
+			<li>
+				<a href="gallery.html">GALLERY</a>
+			</li>
+			<li>
+				<a href="dailyspecial.html">DAILY SPECIAL</a>
+			</li>
+			<li class="dropdown">
+			    <a href="menu.html" class="dropbtn">MENU</a>
+			    <div class="dropdown-content">
+			      <a href="menu.html">LUNCH</a>
+			      <a href="menu.html"> DINNER</a>
+			      <a href="menu.html">DRINKS</a>
+			    </div>
+			 </li>   
+			<li>
+				<a href="Grandcafe.html">HOME</a>
+			</li>
+			
+		</ul>
+		
+	</div>
+	<div id="form">
+		<center>
+		<h1>RESERVE A TABLE</h1>
+		<label>
+			Date :
+		</label>
+		<input type="date" name="rdate" ><br>
+		<label>
+			Time :
+		</label>
+		<input type="Time" name="rtime" ><br>
+		<label>
+				People :
+			</label>
+			<select>
+			<option>
+				Select amount of people
+			</option>
+			<option>
+				1 person
+			</option>
+			<option>
+				2 person
+			</option>
+			<option>
+				3 person
+			</option>
+			<option>
+				4 person
+			</option>
+			<option>
+				5 person
+			</option>
+			<option>
+				6 person
+			</option>
+			<option>
+				7 person
+			</option>
+			<option>
+				8 person
+			</option>
+			
+		   </select><br>
+		   <input type="submit" name="sub" value="Reserve">
+		</center>
+
+	</div>
+<footer>Copyright &copy; nusrathjahan58@gmail.com</footer>
+</body>
+</html>

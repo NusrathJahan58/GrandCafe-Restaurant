@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        div { position: relative; }
+
+img {
+    max-width: 1400px;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 3;
+  -webkit-animation: slideshow 12s linear 0s infinite;
+  -moz-animation: slideshow 12s linear 0s infinite;
+  -ms-animation: slideshow 12s linear 0s infinite;
+  -o-animation: slideshow 12s linear 0s infinite;
+  animation: slideshow 12s linear 0s infinite;
+}
+
+img:nth-child(2) {
+  z-index: 2;
+  -webkit-animation: slideshow 12s linear 4s infinite;
+  -moz-animation: slideshow 12s linear 4s infinite;
+  -ms-animation: slideshow 12s linear 4s infinite;
+  -o-animation: slideshow 12s linear 4s infinite;
+  animation: slideshow 12s linear 4s infinite;
+}
+
+img:nth-child(3) {
+   z-index: 1;
+  -webkit-animation: slideshow 12s linear 8s infinite;
+  -moz-animation: slideshow 12s linear 8s infinite;
+  -ms-animation: slideshow 12s linear 8s infinite;
+  -o-animation: slideshow 12s linear 8s infinite;
+  animation: slideshow 12s linear 8s infinite;
+}
+
+@-webkit-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@-moz-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@-ms-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@-o-keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+@keyframes slideshow {
+   25% { opacity: 1;}
+   33.33% { opacity: 0;} 
+   91.66% { opacity: 0;}
+   100% { opacity: 1;}
+}
+
+    </style>
+</head>
+<body>
+    <div>
+<img src="Food.jpg" />
+<img src="1.jpg" />
+<img src="bg2.jpg" />
+</div>
+
+</body>
+</html>

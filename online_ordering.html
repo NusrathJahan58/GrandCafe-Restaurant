@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Ordering</title>
+ 
+</head>
+<style type="">
+  .nav{
+    margin-top:-10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    
+  }
+  .nav_after{
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .nav ul{
+    background-color: white;
+    list-style-type: none;
+    padding: 0 ;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .nav ul li{
+    float: right;
+    padding-bottom: 100px;
+
+    
+  }
+  .nav ul li a{
+    padding-right: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-family: forte;
+    color: indianred;
+    text-decoration: none;
+
+  }
+  
+  /*.nav ul li:nth-child(1){
+    float: right;
+  }
+  .nav ul li:nth-child(2){
+    float: right;
+  }
+  .nav ul li:nth-child(3){
+    float: right;
+  }
+  .nav ul li:nth-child(4){
+    float: right;
+  }
+  .nav ul li:nth-child(5){
+    float: right;
+  }*/
+
+  .nav ul li.dropbtn {
+    display: inline-block;
+    color: blue;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+  }
+
+
+  .nav ul li a:hover,.dropdown:hover .dropbtn{
+    color: #4CAF50;
+  }
+  .nav ul li.dropdown {
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px red;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 6px 10x;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea{
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+  
+  footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+</style>
+<body>
+  <div class="nav">
+        <a href="Grandcafe.html"><img src="logo.png" width="30%" height="20%"></a>
+    <ul>
+      <li>
+        <a href="reg_log.html">RESERVATION</a>
+      </li>
+      <li>
+        <a href="contact.html">CONTACT</a>
+      </li>
+      <li>
+        <a href="online_ordering.html">ORDER NOW</a>
+      </li>
+      <li>
+        <a href="gallery.html">GALLERY</a>
+      </li>
+      <li class="dropdown">
+          <a href="menu.html" class="dropbtn">MENU</a>
+          <div class="dropdown-content">
+            <a href="menu.html">LUNCH</a>
+            <a href="menu.html"> DINNER</a>
+            <a href="menu.html">DRINKS</a>
+          </div>
+       </li>   
+      <li>
+        <a href="Grandcafe.html">HOME</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+    <div style="background-image: url(bg2.jpg); color: lightgreen">
+      <h1 style="text-shadow: 2px 2px 5px green; font-family: forte;"><b>ORDER NOW</b></h1>
+      <!--  -->
+      <form action="online_ordering.php" method="get">
+      <label>
+        Name
+      </label><br>
+      <input type="text" name="Uname" placeholder="Type Your Name Please"><br>
+      <label>
+        Contact Number
+      </label><br>
+      <input type="text" name="Number" placeholder="Type Your Contact Number"><br>
+      <label>
+        Location
+      </label><br>
+      <textarea name="message" style="width:400px; height:100px" placeholder="Type Your Loction Please"></textarea><br>
+      <label>
+        City
+      </label><br>
+      <input type="text" name="add" placeholder="Type Your City Please"><br>
+      <label>
+        Method Of Payment
+      </label><br>
+      <input type="radio" name="Method Of Payment" value="Cash On Delivery" checked> Cash On Delivery<br>
+      <input type="radio" name="Method Of Payment" value="Bkash" > Bkash<br>
+      <input type="radio" name="Method Of Payment" value="Credit Card"> Credit Card<br><br>
+    
+     <a href="reservation.html"><input type="submit" value="Submit" name="sub"></a>
+     </form>
+  
+  </div>
+  
+</body>  

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Menu
+	</title>
+</head>
+<style type="text/css">
+	.nav{
+		margin-left: -10px;
+		margin-right: -10px;
+		
+	}
+	.nav_after{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.nav ul{
+		background-color: white;
+		list-style-type: none;
+		padding: 0 ;
+		margin: 0;
+		overflow: hidden;
+		position: relative;
+	}
+	.nav ul li{
+		float: right;
+		padding-bottom:100px;
+
+		
+	}
+	.nav ul li a{
+		padding-right: 25px;
+		text-align: center;
+		font-size: 25px;
+		font-family: forte;
+		color: indianred;
+		text-decoration: none;
+
+	}
+	
+	/*.nav ul li:nth-child(1){
+		float: right;
+	}
+	.nav ul li:nth-child(2){
+		float: right;
+	}
+	.nav ul li:nth-child(3){
+		float: right;
+	}
+	.nav ul li:nth-child(4){
+		float: right;
+	}
+	.nav ul li:nth-child(5){
+		float: right;
+	}*/
+    .nav ul li.dropbtn {
+    display: inline-block;
+    color: blue;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+	}
+
+
+	.nav ul li a:hover,.dropdown:hover .dropbtn{
+		color: #4CAF50;
+	}
+	.nav ul li.dropdown {
+    display: inline-block;
+	}
+	.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px red;
+    z-index: 1;
+	}
+
+	.dropdown-content a {
+    color: black;
+    padding: 6px 10x;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	}
+	.dropdown-content a:hover {background-color: skyblue}
+
+	.dropdown:hover .dropdown-content {
+    display: block;
+	}
+	table {
+    border-collapse: collapse;
+    width: 100%;
+	}
+
+	 td {
+	    padding: 8px;
+	    text-align: left;
+	    border-bottom: 1px solid #ddd;
+	    font-family: algerian;
+	    font-size: 20px;
+	}
+
+	tr:hover{background-color:#f5f5f5}
+	footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+	}
+
+</style>
+<body>
+	<div class="nav">
+        <a href="restaurant.html"><img src="logo.png" width="30%" height="20%"></a>
+		<ul>
+			<li>
+				<a href="reg_log.html">RESERVATION</a>
+			</li>
+			<li>
+				<a href="contact.html">CONTACT</a>
+			</li>
+			<li>
+				<a href="gallery.html">GALLERY</a>
+			</li>
+			<li>
+				<a href="dailyspecial.html">DAILY SPECIAL</a>
+			</li>
+			<li class="dropdown">
+			    <a href="javascript:void(0)" class="dropbtn">MENU</a>
+			    <div class="dropdown-content">
+			      <a href="menu.html">LUNCH</a>
+			      <a href="menu.html"> DINNER</a>
+			      <a href="menu.html">DRINKS</a>
+			    </div>
+			 </li>   
+			<li>
+				<a href="restaurant.html">HOME</a>
+			</li>
+			
+		</ul>
+	</div>
+	<div>
+		<center>
+		<h1 style="font-size:50px; font-family: forte; color: brown; background-color: skyblue; "> LUNCH </h1>
+		<table style="background-image: url(PS_Dining_Main.jpg); color: salmon">
+			<tr>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr>
+				<td> Thai Fried Rice</td>
+				<td> 299 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Chicken Cashewnut Salad</td>
+				<td> 249 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Spaghetti With Beef</td>
+				<td> 277 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Lemon And Garlic Chicken</td>
+				<td> 299bdt</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Mexican Chicken Gravy</td>
+				<td> 329 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Prawn With Garlic Sauce</td>
+				<td> 250 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Sizzling Beef</td>
+				<td> 349 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Thai Soup Thick</td>
+				<td> 130 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Strawberry Mingle</td>
+				<td> 220 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Tiramisu </td>
+				<td> 220 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Red Velvet Swiss Roll</td>
+				<td> 150 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+		</table>
+		</center>
+	</div>
+	<div>
+		<center>
+		<h1 style="font-size:50px; font-family: forte; color: brown; background-color: skyblue;"> DINNER </h1>
+		<table style="background-image: url(menu7.png);">
+			<tr>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr>
+				<td> Mexican Steak </td>
+				<td> 429 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Fried Calamari </td>
+				<td> 295 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Korai Chicken </td>
+				<td> 300 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Grilled Fish </td>
+				<td> 350 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> American Chopsuey</td>
+				<td> 329 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Mixed Seafood Salad </td>
+				<td> 450 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Rib Eye Steak</td>
+				<td> 790 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Rice Bowl</td>
+				<td> 130 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Pad Thai Noodles</td>
+				<td> 220 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Beef Basil Leaf</td>
+				<td> 275 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Nutella Waffle</td>
+				<td> 300 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Brownie Fudge Delight</td>
+				<td> 150 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Chocolate Lava Cake </td>
+				<td> 300 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+		</table>
+		</center>
+	</div>
+	<div>
+		<center>
+		<h1 style="font-size:50px; font-family: forte; color: brown; background-color: skyblue;"> DRINKS</h1>
+		<table style="background-image: url(menu6.png); color: deeppink">
+			<tr>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr>
+				<td>Soft Drinks</td>
+				<td>40 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td>Fresh Lime Soda</td>
+				<td>100 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td> Lassi</td>
+				<td>100 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td>Cappuccino</td>
+				<td>100 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td>Caffe Latte</td>
+				<td>100 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></form></td>
+			</tr>
+			<tr>
+				<td>Hot Chocolate</td>
+				<td> 150 BDT</td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+			<tr>
+				<td>Coconut Iced Coffee</td>
+				<td>100 BDT </td>
+				<td><button type="button" onclick="window.location='online_ordering.html';" style="width:50%;font-size:20px; font-family: forte; ">ORDER</button></td>
+			</tr>
+		</table>
+		</center>
+	</div>
+	<footer>Copyright &copy; nusrathjahan58@gmail.com</footer>
+
+
+
+</body>
+</html>

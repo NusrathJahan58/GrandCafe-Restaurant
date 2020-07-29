@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grand Cafe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style type="text/css">
+	.nav{
+		margin-top:-10px;
+		margin-left: -10px;
+		margin-right: -10px;
+		
+	}
+	.nav_after{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.nav ul{
+		background-color: white;
+		list-style-type: none;
+		padding: 0 ;
+		margin: 0;
+		overflow: visible;
+		position: relative;
+	}
+	.nav ul li{
+		float: right;
+		padding-bottom: 100px;
+
+		
+	}
+	.nav ul li a{
+		padding-right: 25px;
+		text-align: center;
+		font-size: 25px;
+		font-family: forte;
+		color: indianred;
+		text-decoration: none;
+
+	}
+	
+	/*.nav ul li:nth-child(1){
+		float: right;
+	}
+	.nav ul li:nth-child(2){
+		float: right;
+	}
+	.nav ul li:nth-child(3){
+		float: right;
+	}
+	.nav ul li:nth-child(4){
+		float: right;
+	}
+	.nav ul li:nth-child(5){
+		float: right;
+	}
+	.nav ul li:nth-child(6){
+		float: right;
+	}*/
+
+
+	.nav ul li.dropbtn {
+    display: inline-block;
+    color: blue;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+	}
+
+
+	.nav ul li a:hover,.dropdown:hover .dropbtn{
+		color: #4CAF50;
+	}
+	.nav ul li.dropdown {
+    display: inline-block;
+	}
+	.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px red;
+    z-index: 1;
+
+	}
+
+	.dropdown-content a {
+    color: black;
+    padding: 6px 10x;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	}
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	.dropdown:hover .dropdown-content {
+    display: block;
+	}
+    /** {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+/*.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}*/
+
+/* Number text (1/3 etc) */
+/*.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}*/
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+	.gallery{
+
+		margin: 5px 5px 5px 40px;
+		float: left;
+		border: 2px solid #ccc;
+	}
+	.gallery a:hover{
+		border: 2px solid #777;
+	}
+
+	.gallery img{
+		width: 380px;
+		height: 250px;
+	}
+	.gallery .desc{
+		padding : 10px;
+
+	}
+	.gallery .desc p a{
+		
+		text-decoration: none;
+		color: #333;
+		text-align: center;
+		font-size: 20px;
+		font-family: verdana;
+	}
+	footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+</style>
+<body>
+	<div class="nav">
+        <a href="Grandcafe.html"><img src="logo.png" width="30%" height="20%"></a>
+		<ul>
+			<li>
+				<a href="reg_log.html">RESERVATION</a>
+			</li>
+			<li>
+				<a href="contact.html">CONTACT</a>
+			</li>
+			<li>
+				<a href="gallery.html">GALLERY</a>
+			</li>
+			<li>
+				<a href="dailyspecial.html">DAILY SPECIAL</a>
+			</li>
+			<li class="dropdown">
+			    <a href="menu.html" class="dropbtn">MENU</a>
+			    <div class="dropdown-content">
+			      <a href="menu.html">LUNCH</a>
+			      <a href="menu.html"> DINNER</a>
+			      <a href="menu.html">DRINKS</a>
+			    </div>
+			 </li>   
+			<li>
+				<a href="Grandcafe.html">HOME</a>
+			</li>
+			
+		</ul>
+		
+	</div><br><br>
+	<div class="nav_after">
+		<img src="PS_Dining_Main.jpg" width="100%" height="500px">
+	</div>  
+	<!-- <div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <img src="PS_Dining_Main.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="food1.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+		  <img src="food.jpg" style="width:100%">
+		</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		</div>
+
+	
+	<div> -->
+
+		<p style="position: center; font-size: 20px; font-family: forte;border-spacing: 50px; color: black;  ">
+			Welcome to the Grand Cafe—a warm and inviting family-owned restaurant located on Dhanmondi, in Dhaka. Grand Cafe owner Samira Sahil and her staff are dedicated to serving a quality meal prepared with the freshest produce, meat and seafood. You are invited to spend a lazy afternoon having lunch in our garden, or enjoy a starlit meal on our wraparound porch. Featuring fresh seafood specials, and an award-winning wine list.
+		</p>
+	</div>
+	<div class="gallery">
+
+		<a href="menu.html"><img src="menu.png"></a>
+		<div class="desc">
+			<p><a href="menu.html">Our Menu</a></p>
+		</div>
+	</div>
+	<div class="gallery">
+		<a href="dailyspecial.html"><img src="daily_special.jpg"></a>
+		<div class="desc">
+			<p><a href="dailyspecial.html">Meet Our Daily Special</a></p>
+		</div>
+	</div>
+	<div class="gallery">
+
+		<a href="aboutus.html"><img src="grand-cafe.jpg"></a>
+		<div class="desc">
+			<p><a href="aboutus.html">About Us</a></p>
+		</div>
+		
+	</div>
+	<footer>Copyright &copy; nusrathjahan58@gmail.com</footer>
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>

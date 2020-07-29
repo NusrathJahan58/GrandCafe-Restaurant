@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daily Special</title>
+</head>
+<style type="text/css">
+	.nav{
+		margin-top:-10px;
+		margin-left: -10px;
+		margin-right: -10px;
+		
+	}
+	.nav_after{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.nav ul{
+		background-color: white;
+		list-style-type: none;
+		padding: 0 ;
+		margin: 0;
+		overflow: hidden;
+		position: relative;
+	}
+	.nav ul li{
+		float: right;
+		padding-bottom: 100px;
+
+		
+	}
+	.nav ul li a{
+		padding-right: 25px;
+		text-align: center;
+		font-size: 25px;
+		font-family: forte;
+		color: indianred;
+		text-decoration: none;
+
+	}
+	
+	/*.nav ul li:nth-child(1){
+		float: right;
+	}
+	.nav ul li:nth-child(2){
+		float: right;
+	}
+	.nav ul li:nth-child(3){
+		float: right;
+	}
+	.nav ul li:nth-child(4){
+		float: right;
+	}
+	.nav ul li:nth-child(5){
+		float: right;
+	}*/
+
+	.nav ul li.dropbtn {
+    display: inline-block;
+    color: blue;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+	}
+
+
+	.nav ul li a:hover,.dropdown:hover .dropbtn{
+		color: #4CAF50;
+	}
+	.nav ul li.dropdown {
+    display: inline-block;
+	}
+	.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px red;
+    z-index: 1;
+	}
+
+	.dropdown-content a {
+    color: black;
+    padding: 6px 10x;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+	}
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	.dropdown:hover .dropdown-content {
+    display: block;
+	}
+
+	.special{
+		background-color: indianred;
+	}
+	.gallery{
+
+		margin: 50px 50px 50px 200px;
+		float: left;
+		background-color: #f2f2f2;
+
+		/*padding-left: 10px;*/
+
+	}
+
+	.gallery img{
+		width: 380px;
+		height: 250px;
+	}
+	.gallery .desc{
+		padding : 10px;
+
+	}
+	footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+	}
+
+</style>
+<body>
+	<div class="nav">
+        <a href="Grandcafe.html"><img src="logo.png" width="30%" height="20%"></a>
+		<ul>
+			<li>
+				<a href="reg_log.html">RESERVATION</a>
+			</li>
+			<li>
+				<a href="contact.html">CONTACT</a>
+			</li>
+			<li>
+				<a href="gallery.html">GALLERY</a>
+			</li>
+			<li>
+				<a href="dailyspecial.html">DAILY SPECIAL</a>
+			</li>
+			<li class="dropdown">
+			    <a href="javascript:void(0)" class="dropbtn">MENU</a>
+			    <div class="dropdown-content">
+			      <a href="menu.html">LUNCH</a>
+			      <a href="menu.html"> DINNER</a>
+			      <a href="menu.html">DRINKS</a>
+			    </div>
+			 </li>   
+			<li>
+				<a href="Grandcafe.html">HOME</a>
+			</li>
+			
+		</ul>
+		
+	</div>
+	<div class="special">
+		<center>
+		<h1>OUR DAILY SPECIAL</h1>
+		</center>
+		
+		<div class="gallery">
+
+		<img src="drinks.png">
+		<div class="desc">
+			<center>
+				<h2>DAILY HAPPY HOUR</h2>
+			<p>Join us for special prices on drinks and food!</p>
+			</center>
+		</div>
+		</div>
+		<div class="gallery">
+		<img src="daily_special.jpg">
+		<div class="desc">
+			<center>
+				<h2>PRE-SUNSET DINNER </h2>
+			<p>Stop by for an early bite before the evening <br>festivities begin.</p>
+			</center>
+		</div>
+		</div>
+	</div>
+	<footer>Copyright &copy; nusrathjahan58@gmail.com</footer>
+
+</body>
+</html>
