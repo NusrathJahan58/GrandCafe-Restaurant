@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 require_once 'connection.php';
 $f_n = $_REQUEST['first_name'];
 $l_n = $_REQUEST['last_name'];
@@ -19,7 +19,7 @@ if (mysqli_query($conn, $sql)) {
 }
 
 mysqli_close($conn);
-?>
+?> -->
 
 
 <!DOCTYPE html>
@@ -152,11 +152,15 @@ mysqli_close($conn);
     background-color: black;
     clear: left;
     text-align: center;
-}	
+}
+	footer img{
+		width: 50px;
+	}
+
 </style>
 <body>
 	<div class="nav">
-        <a href="Grandcafe.html"><img src="logo.png" width="30%" height="20%"></a>
+        <a href="index.html"><img src="logo.png" width="30%" height="20%"></a>
 		<ul>
 			<li>
 				<a href="reg_log.html">RESERVATION</a>
@@ -179,7 +183,7 @@ mysqli_close($conn);
 			    </div>
 			 </li>   
 			<li>
-				<a href="Grandcafe.html">HOME</a>
+				<a href="index.html">HOME</a>
 			</li>
 			
 		</ul>
@@ -233,6 +237,10 @@ mysqli_close($conn);
 		</center>
 
 	</div>
-<footer>Copyright &copy; nusrathjahan58@gmail.com</footer>
+<footer><a href="https://www.facebook.com/"><img src="logo/fb.png"/></a>
+		<a href="https://www.google.com"><img src="logo/google.png"/></a>
+		<a href="https://www.twitter.com"><img src="logo/twitt.png"/></a>
+		<a href="https://www.linkdin.com"><img src="logo/linkdinn.png"/></a><br> 
+	    Copyright &copy; nusrathjahan58@gmail.com</footer>
 </body>
 </html>
